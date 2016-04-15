@@ -1,0 +1,40 @@
+{
+    "name": "encore-auditor",
+    "version": "0.0.1",
+    "description": "Source code analyzer for EncoreUI applications.",
+    "main": "./lib/encore-auditor.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": "rackerlabs/encore-auditor-cli",
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/rackerlabs/encore-auditor-cli/issues"
+    },
+    "homepage": "https://github.com/rackerlabs/encore-auditor-cli#readme",
+    "dependencies": {
+        "commander": "^2.9.0",
+        "lodash": "^4.0.0"
+    },
+    "preferGlobal": true,
+    "bin": {
+        "encore-auditor": "bin/encore-auditor.js"
+    },
+    "config": {
+        "globs": {
+            "markdown": [
+                "app/**/*.html"
+            ],
+            "style": [
+                "app/**/*.less"
+            ],
+            "scripts": [
+                "app/**/*.js"
+            ],
+            "tests": [
+                "test/**/*.js"
+            ]
+        }
+    }
+}
