@@ -1,6 +1,6 @@
 {
   "name": "encore-auditor",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Source code analyzer for EncoreUI applications.",
   "main": "./lib/encore-auditor.js",
   "scripts": {
@@ -14,6 +14,7 @@
   },
   "homepage": "https://github.com/rackerlabs/encore-auditor-cli#readme",
   "dependencies": {
+    "chalk": "^1.1.3",
     "commander": "^2.9.0",
     "glob": "^7.0.3",
     "lodash": "^4.0.0"
@@ -24,18 +25,10 @@
   },
   "config": {
     "globs": {
-      "markdown": [
-        "app/**/*.html"
-      ],
-      "style": [
-        "app/**/*.less"
-      ],
-      "scripts": [
-        "app/**/*.js"
-      ],
-      "tests": [
-        "test/**/*.js"
-      ]
+      "markup": "{app,src}/**/*.html",
+      "styles": "{app,src}/**/*.less",
+      "scripts": "{app,src}/**/*.js",
+      "tests": "test/**/*.js"
     }
   }
 }

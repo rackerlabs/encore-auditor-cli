@@ -9,8 +9,6 @@ program
     .usage('[options] <directory ...>')
     .description('A tool to analyze EncoreUI application source code for usage of deprecated features.')
     .option('--debug', 'Debug encore-auditor program')
-    .option('--exclude-glob [glob]', 'Ignore files matching given glob.')
-    .option('--include-directory [directory]', 'Analyze files in given directory')
     .parse(process.argv);
 
 cli(program);
