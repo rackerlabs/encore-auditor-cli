@@ -1,6 +1,6 @@
 {
   "name": "encore-auditor",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Source code analyzer for EncoreUI applications.",
   "main": "./lib/encore-auditor.js",
   "scripts": {
